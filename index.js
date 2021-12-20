@@ -72,7 +72,32 @@ app.get('/', (req, res) => {
     res.send('ema john server is running')
 })
 
+app.get('/hello', (req, res) => {
+    res.send('hello updated here')
+})
 
 app.listen(port, () => {
     console.log('server running', port)
 })
+
+
+/*
+one time:
+1. heroku ac open.
+2. Heroku software install.
+
+Every Project
+1. Git init 
+2. .gitignore(node_modules,.env)
+3. make sure you have this script "start": "node index.js"
+4. put process.env.PORT in front of your port number.
+5. push everything to git.
+6. heroku login
+7. heroku create (only one time)
+8. command : git push heroku main.
+
+
+ 
+
+
+*/
